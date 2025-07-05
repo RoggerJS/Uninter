@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogger´s Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>body {background-color: rgb(197, 228, 255);}</style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Rogger J. Acuna Torres</h1>
+        <nav class="navi">
+            <a class="Link" href="#Sobre">Sobre</a>
+            <a class="Link" href="#Hobbies">Hobbies</a>
+            <a class="Link" href="#Habilididades">Habilididades</a>
+            <a class="Link" href="#Lugares">Lugares</a>
+            <a class="Link" href="https://www.linkedin.com/in/acunarogger/">Meu LinkedIn</a>
+        </nav>
+    </header>
+
+
+
+    <section id="Sobre">
+
+    <p>Meu Nomé é Rogger, estrangeiro morando no Brasil há 7 anos, Tenho 27 anos, moro em Colombo-Paraná.
+    meus principais intereses são da area de tecnologia, desde criança eu tive afinidade mexendo com computadores e seus sistemas, assim como o hardware que o compõe
+    Também tenho interesse e afinidade com a mecanica automotiva, sempre gostei de entender o funcionamento dos motores com muito detalhe</p>
+
+    <button onclick="mostrarMensagem()">Clique para se motivar</button>
+  <div id="mensagem"></div>
+
+  <script>
+    function mostrarMensagem() {
+      const mensagens = [
+        "Você é capaz de coisas incríveis. Acredite!",
+        "O sucesso é a soma de pequenos esforços repetidos diariamente.",
+        "Nunca é tarde para recomeçar e fazer diferente.",
+        "Você está no caminho certo. Continue avançando!",
+        "Acredite no seu potencial. Você já chegou até aqui!"
+      ];
+
+      const mensagemAleatoria = mensagens[Math.floor(Math.random() * mensagens.length)];
+      const divMensagem = document.getElementById("mensagem");
+
+      divMensagem.textContent = mensagemAleatoria;
+      divMensagem.style.display = "block";
+    }
+  </script>
+
+ </section>
+    
+    <section id="Hobbies">
+    <h2 class="titulo2">Meus Hobbies</h2>
+    <img src="gaming.jpg" > <img src="music.jpg"> <img src="dirigir.webp"> <img src="netflix.webp"> <img src="podcast.jpeg">
+    <ul class="ulist">
+        <li>Series de TV</li>
+        <li>Videogames</li>
+        <li>Musica e Podcast</li>
+        <li>Dirigir na estrada</li>
+
+
+    </ul>
+    </section>
+
+    <section id="Habilididades">
+        <h2 class="titulo2">Habilididades</h2>
+        
+        <ul class="ulist">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section id="Lugares">
+        <table>
+    <caption class="titulo2">🌍 Países que Quero Visitar</caption>
+    <tr>
+      <th>País</th>
+      <th>Imagem</th>
+    </tr>
+    <tr>
+      <td>Suecia</td>
+      <td><img src="Suecia.jpg" alt="Suecia"></td>
+    </tr>
+    <tr>
+      <td>Itália</td>
+      <td><img src="Italia.jpeg" alt="Itália"></td>
+    </tr>
+    <tr>
+      <td>Canadá</td>
+      <td><img src="Canada.jpg" alt="Canadá"></td>
+    </tr>
+  </table>
+    </section>
+
+  
+    
+</body>
+</html>
